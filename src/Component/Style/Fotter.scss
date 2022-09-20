@@ -1,0 +1,106 @@
+// @use './colorTheem/color.scss';
+@mixin spacing{
+    margin: 20px 10px ;
+}
+ 
+.Fotter{
+    background-color: #000;
+    color: #838181;
+    padding: 30px 0 40px 0;
+    a{
+        color: #838181;
+    }
+    .foot-body{
+        display: flex;
+        justify-content: space-around;
+        text-align: justify;
+        @media (max-width:768px){
+            display: block;
+            justify-content: flex-end;
+            margin: 0 auto;
+            text-align: center;
+        }
+    div{
+        margin: 0 10px;
+    }
+
+    .sec_title{
+        color: #DCB14A;
+    }
+        .sec_1{
+            .subscribe{
+                @include spacing;
+                .search-box{
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                }
+                .search-btn{
+                    padding: 10px;
+                    border: none;
+                    background-color: #DCB14A;
+                }
+            }
+            .Add{
+                @include spacing;
+                li{
+                    padding: 10px 0;
+                }  
+            }
+            .follow{
+                .fab{
+                    padding: 10px;
+                    margin-right: 10px;
+                    color: #c2c2c2;
+                    &:hover{
+                        color:#DCB14A;
+                    }
+                }
+            }
+        }
+        .sec_2{
+            @include spacing;
+            .menu-opt{
+                margin-top: 20px;
+                li{
+                    padding: 10px 0;
+                    margin: 5px 0;
+                    &:hover a{
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .sec_3{
+            @include spacing;
+            .search{
+                .search-box{
+                    margin-bottom:30px ;
+                    border: none;
+                    outline: none;
+                    color: #fff;
+                    background-color:#000;
+                    padding: 10px;
+                    border-bottom: 1px solid #DCB14A;
+                }
+                .search_btn{
+                    padding: 10px;
+                    background-color: #000;
+                    border:none;
+                    outline: none;
+                    color: #DCB14A;
+                    border-bottom: 1px solid #DCB14A;
+                }
+            }
+            .last_opt{
+                a{
+                    padding: 10px 0 ;
+                    margin-bottom: 10px;
+                    &:hover{
+                        color: #fff
+                    }
+                }
+            }
+        }
+    }
+}

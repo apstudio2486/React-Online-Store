@@ -1,0 +1,38 @@
+.BlogSec{
+    margin: 40px 0;
+    .blog_title{
+        margin: 20px 0;
+        text-align: center;
+        font-size: 34px;
+        font-weight: 600;
+        display: block;
+        position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 60px;
+                height: 5px;
+                bottom: -10px;
+                left: 50%;
+                transform: translate(-50%,50%);
+                background-color: #DCB14A;
+            }
+    }
+    .blogSet{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    @media (max-width:990px) {
+        .blog_title{
+            font-size: 22px;
+            &::before{
+                width: 10%;
+                height: 3px;
+            }
+        }
+    }
+}

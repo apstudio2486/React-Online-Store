@@ -1,0 +1,122 @@
+@mixin margin {
+    margin: 30px 0;
+}
+
+.counter{
+    
+    padding: 90px 0;
+    margin: 20px 0;
+    background-image: url('../Image/countdown.jpg');
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    .counter-body{
+        display: flex;
+        justify-content: start;
+
+        .Counter-data{
+            width:50%;
+
+            .title{
+                @include margin;
+                font-size: 38px;
+                font-weight: 500;
+                position: relative;
+                padding-bottom: 5px;
+                span{
+                    color: #FF0000;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 60px;
+                    height: 5px;
+                    bottom: -10px;
+                    left: 0;
+                    background-color: #DCB14A;
+                }
+            }
+            .detail{
+                @include margin;
+            }
+            .count{
+                .count-list{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding: 10px 0;
+                    @include margin;
+                    li{
+                        font-family: Arial, Helvetica, sans-serif;
+                        text-align: center;
+                        font-weight: 500;
+                        padding: 10px;
+                        margin: 0 20px;
+                        position: relative;
+                        h3{
+                            font-size: 42px;
+                        }
+                        &:first-child{
+                            margin-left: 0;
+                            padding-left: 0 ;
+                        }
+                    }
+                    span{
+                        font-weight: bold;
+                        font-size: 28px;
+                    }
+                } 
+            }
+            .shopeNow-btn{
+                margin-bottom: 30px ;
+                padding: 8px 20px;
+                background-color: #000;
+                font-weight: 500;
+                color: #fff;
+                .fas{
+                    padding: 5px;
+                }
+            }
+        }
+
+        @media (max-width:991px) {
+            .Counter-data{
+                width:100%;
+                text-align: center;
+
+
+                .title{
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin: 20px 0;
+                    &::after{
+                        width: 15% !important;
+                        height: 3px !important;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                .shopeNow-btn{
+                    font-size: 12px;
+                }
+                .count-list {
+                    display: flex;
+                    justify-content: center !important;
+                    font-size: 14px !important;
+                    margin: 15px 0 !important;
+                    li{
+                        padding: 5px !important ;
+                        margin: 0 10px !important;
+                        h3{
+                            font-size: 28px !important;
+                        }
+                    }
+                    span{
+                        font-size: 18px !important;
+                    }
+               }
+            }
+        }
+    }
+}

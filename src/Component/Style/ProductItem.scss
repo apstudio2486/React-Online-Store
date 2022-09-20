@@ -1,0 +1,106 @@
+.pro_item{
+    margin: 30px 0;
+
+    .Items{
+        margin: 50px 0;
+        padding: 10px 0;
+
+        .pro-dtail{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            @media (max-width:991px) {
+                display: block;
+                text-align: center;
+            }
+
+            .pro-img{
+                width: 30%;
+                background-size: cover;
+                img{
+                    // width: 50%;
+                    transform: scale(.7);
+                    height: auto;
+                }
+            }
+            &:hover{
+                .pro-img{
+                    img{
+                        transform: scale(.8);
+                        transition: .5s;
+                    }
+                }
+            }
+            .pro-content{
+                width: 50%;                
+                .pro-title{
+                    padding: 5px 0;
+                    p{
+                        opacity: .5;
+                    }
+                    .pro-name{
+                        padding: 5px 0;
+                        font-size: 34px;
+                        position: relative;
+                        color: #3e3e3e;
+                        &:hover{
+                            color: #DCB14A;
+                        };
+                        
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 60px;
+                            height: 5px;
+                            bottom: -10px;
+                            left: 0;
+                            background-color: #DCB14A;
+                        }
+                    }
+                }
+
+                .item-dtail{
+                    margin: 50px 0;
+                    font-weight: 500;
+                    .Buy-btn{
+                        text-align: center;
+                        padding: 10px 30px;
+                        border: 1px solid #3e3e3e;
+                        color: #3e3e3e;
+                        margin: 30px 0 10px 0 ;
+                        transition: .5s;
+                        .fas{
+                            padding-left: 10px;
+                        }
+                        &:hover{
+                            background-color: #000;
+                            border: 1px solid #000;
+                            color: #fff ;
+                        }
+                    }
+                }
+            }
+            @media (max-width:991px) {
+                .pro-img{
+                    width: 100%;
+                }
+                .pro-content{
+                    width: 100%;
+                    .pro-title{
+                        p{
+                            font-size: 12px;
+                        }
+                        .pro-name{
+                            font-size: 24px;
+                        }
+                    }
+                    .item-dtail{
+                        font-weight:400 ;
+                    }
+                }
+            }
+        }
+    }
+}

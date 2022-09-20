@@ -1,0 +1,62 @@
+@mixin flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Header{
+    box-shadow: 0 0 2px 3px #ddd;
+    padding: 10px 0;
+    .head-body{
+        .menu{
+            @include flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span{
+                display: flex;
+                align-items:center;
+            }
+            .search-box{
+                background-color: #dddddd;
+                border: none;
+                color: #3e3e3e;
+                outline: 0;
+                padding: 10px 10px 10px 35px;
+                border-radius: 20px;
+            }
+            .fa-search{
+                color:#3e3e3e;
+                z-index: 999;
+                position: absolute;
+                margin-left:10px; 
+            }
+            .title{
+                padding: 15px 0;
+                color: #DCB14A
+            }
+            .menu-opt{
+                @include flex;
+                align-items: center;
+                li{
+                    padding: 10px ;
+                    margin: 0 10px;
+                    a{
+                        font-size: 18px;
+                        color:#3e3e3e;
+                        &:hover{
+                            color:#DCB14A;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width:991px) {
+                display: block;
+                text-align: center;
+                    span{
+                        display: none;
+                    }
+            }
+        }
+    }
+}

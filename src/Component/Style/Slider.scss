@@ -1,0 +1,77 @@
+.img_1{
+    background-image:url(../Image/1.jpg) ;
+}
+.img_2{
+    background-image:url(../Image/2.jpg) ;
+}
+.img_3{
+    background-image:url(../Image/3.jpg) ;
+}
+.swiper-button-next{
+    display: none !important ;
+}
+.swiper-button-prev{
+    display: none !important ;
+}
+
+.img-background{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    
+    .img-content{
+        width: 1320px;
+        padding: 30px;
+        margin: 0px auto;
+        
+        .side-1{
+            width: 50%;
+            @media (max-width:991px) {
+                width: 100%;
+            }
+            span{
+                color: #DCB14A;
+                font-weight: bold;
+                font-size: 20px;
+                padding: 5px 0;
+                line-height: 20px;
+            };
+            p{
+                &:nth-of-type(1){
+                    font-size: 38px;
+                    position: relative;
+                    margin: 20px 0;
+                    font-weight: 600;
+                    line-height: 50px;
+                    
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 60px;
+                        height: 3px;
+                        bottom: -10px;
+                        left: 0;
+                        background-color: #DCB14A;
+                    }
+                }
+            }
+            .shopeNow-btn{
+                padding: 15px;
+                margin-top: 20px;
+                background-color: #000;
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 14px;
+                .fa-arrow-right{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

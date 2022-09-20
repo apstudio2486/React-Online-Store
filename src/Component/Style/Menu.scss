@@ -1,0 +1,62 @@
+.Menu{
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    right: 0;
+
+    .menu-body{
+        padding: 0 30px;
+        .cross{
+            color: #DCB14A;
+            margin: 20px 0;
+            text-align: end;
+        }
+        .menu-opt{
+            li{
+                padding: 10px 0;
+                margin-bottom: 15px;
+                text-align: start;
+                display: flex;
+                justify-content: space-around;
+
+                &:hover{
+                    a{
+                        color: #DCB14A;
+                    }
+                }
+            }
+        }   
+        .add{
+            text-align: center;
+            padding: 10px;
+            h2{
+                margin: 10px 0;
+                color: #838181;
+            }
+            .add-detail{
+                margin: 20px 0;
+            }
+            .follow{
+                margin: 0 auto;
+                color: #838181;
+                .fab{
+                    padding: 10px;
+                    color: #838181;
+                    margin-left: 10px;
+                    &:hover{
+                        color: #DCB14A;
+                    }
+                }
+            }
+        }
+    }
+    a{
+        color: #c1c1c1;
+        
+    }
+    
+}

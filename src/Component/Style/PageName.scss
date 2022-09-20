@@ -1,0 +1,40 @@
+.PageName-page{
+    padding: 80px 0;
+    background-color: rgba(244, 245, 247 ,1.0);
+
+    .login-cont{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .login-title{
+            font-size:32px;
+            font-weight:500;
+        }
+        .login-opt{
+            display: flex;
+            align-items: center;
+            li{
+                padding: 5px;
+                a{
+                    color: #000;
+                }
+            }
+        }
+
+    }
+    @media (max-width:768px) {
+            .login-cont{
+                text-align: center;
+                display: block;
+                justify-content: center;
+            .login-title{
+                font-size: 24px;
+            }
+            .login-opt{
+                margin: 20px 0;
+                justify-content: center;
+            }
+        }
+    }
+}

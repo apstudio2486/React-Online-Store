@@ -1,0 +1,40 @@
+.BlogList{
+    margin: 30px 0;
+    width: 100%;
+    .blog-detail{
+        .blogList-detail{
+            padding: 0 10px ;
+            .blog_img{
+                width: 100%;
+            }
+            li{
+                .blogitem-title{
+                    font-size:22px;
+                    color: #000;
+                    font-weight: 500;
+                    display: block;
+                }
+                &:nth-child(3){
+                    padding: 10px 0;
+                    a{
+                        color: #000;
+                        padding: 0 5px;
+                        &:hover{
+                            color: #DBC14A;
+                            transform: .2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:990px) {
+        .blogitem-title{
+            font-size: 16px;
+            &:nth-child(3){
+                font-size: 14px;
+            }
+        }
+    }
+}
