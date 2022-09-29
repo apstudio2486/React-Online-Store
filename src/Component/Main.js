@@ -8,7 +8,7 @@ import BlogSec from './BlogSec';
 
 export default function Main() {
   return (
-    <div className='Main'>    
+    <div className='Main'>
         <Slider/>
         <ProductList/>
         <ItemSlide/>

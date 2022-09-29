@@ -4,7 +4,7 @@
 }
 
 .Header{
-    box-shadow: 0 0 2px 3px #ddd;
+    // box-shadow: 0 0 2px 3px #ddd;
     padding: 10px 0;
     .head-body{
         .menu{
@@ -38,6 +38,7 @@
                 @include flex;
                 align-items: center;
                 li{
+                    cursor: pointer;
                     padding: 10px ;
                     margin: 0 10px;
                     a{

@@ -16,12 +16,26 @@
             }
 
             .pro-img{
-                width: 30%;
                 background-size: cover;
                 img{
-                    // width: 50%;
+                    width: 100%;
                     transform: scale(.7);
                     height: auto;
+                }
+                @media (max-width:768px) {
+                    img{
+                        transform: scale(.5) !important;
+                        height: auto;
+                        &:hover{
+                            transform: scale(.6) !important;
+                            transition: .5s;
+                        }
+                    }
+                }
+                @media (max-width:575px) {
+                    img{
+                        width: 80%;
+                    }
                 }
             }
             &:hover{
@@ -84,7 +98,6 @@
             }
             @media (max-width:991px) {
                 .pro-img{
-                    width: 100%;
                 }
                 .pro-content{
                     width: 100%;

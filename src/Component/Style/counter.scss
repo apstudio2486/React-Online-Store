@@ -2,8 +2,8 @@
     margin: 30px 0;
 }
 
-.counter{
-    
+.counter{ 
+
     padding: 90px 0;
     margin: 20px 0;
     background-image: url('../Image/countdown.jpg');
@@ -12,7 +12,7 @@
     background-size: cover;
     .counter-body{
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
 
         .Counter-data{
             width:50%;
@@ -43,7 +43,7 @@
             .count{
                 .count-list{
                     display: flex;
-                    justify-content: start;
+                    justify-content: flex-start;
                     align-items: center;
                     padding: 10px 0;
                     @include margin;

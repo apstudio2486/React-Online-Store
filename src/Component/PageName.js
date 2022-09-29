@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './Style/PageName.scss';
 
-export default class 
- extends Component {
+export default class PageName extends Component {
   render() {
     return (
       <div>
@@ -17,7 +16,7 @@ export default class
                             <a href='/'> Home </a>
                         </li>/
                         <li>
-                            <a> {this.props.pageName} </a>
+                            <i> {this.props.pageName} </i>
                         </li>
                     </ul>
                 </div>
@@ -26,4 +25,4 @@ export default class
       </div>
     )
   }
-}
+};

@@ -3,7 +3,12 @@ import PageName from './PageName'
 import './Style/Cart.scss'
 
 export default function ViewCart() {
-  return (
+    function total(){
+        
+        alert(window.location)
+    }
+  
+    return (
     <div className=''>
         <PageName pageName='Cart'/>
         <div className='cart_cont'>
@@ -38,8 +43,12 @@ export default function ViewCart() {
                     </table>
                     <div className='btns_coupon'>
                         <div className='flex_sec'>
-                            <a href='/' className='btn_black'><i className='fas fa-arrow-left'/> Continue Shoping </a>
-                            <a href='/' className='btn_border'> Clear Cart </a>
+                            <p>
+                                <a href='/' className='btn_black'><i className='fas fa-arrow-left'/> Continue Shoping </a>
+                            </p>
+                            <p>
+                                <a href='/' className='btn_border'> Clear Cart </a>
+                            </p>
                         </div>
                         <div className='flex_sec'>
                             <div className='coupon_sec'>
@@ -64,8 +73,8 @@ export default function ViewCart() {
                             </div>
                         </div>
                         <div className='flex_sec'>
-                            <a href='/' className='btn_border'> Apply Coupon Code </a>
-                            <a href='/' className='btn_black'> Proced to checkout </a>
+                            <p><a href='/' className='btn_border'> Apply Coupon Code </a></p>
+                            <p><a href='/' onClick={total} className='btn_black'> Proced to checkout </a></p>
                         </div>
                     </div>
                 </div>

@@ -1,19 +1,24 @@
-.Menu{
-    background-color: rgba(0,0,0,.8);
+.Menu_sec{
+    background-color: rgba(0,0,0,.9);
     color: #fff;
     text-align: center;
-    height: 100vh;
-    position: absolute;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
     top: 0;
-    width: 30%;
+    width: 0;
+    // display: none;
+    margin: 0 auto;
+    transition: .5s;
     right: 0;
 
     .menu-body{
         padding: 0 30px;
         .cross{
-            color: #DCB14A;
             margin: 20px 0;
+            color: #DCB14A;
             text-align: end;
+            cursor: pointer;
         }
         .menu-opt{
             li{
@@ -21,11 +26,11 @@
                 margin-bottom: 15px;
                 text-align: start;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
 
                 &:hover{
-                    a{
-                        color: #DCB14A;
+                    i{
+                        color: #DCB14A !important;
                     }
                 }
             }
@@ -39,24 +44,51 @@
             }
             .add-detail{
                 margin: 20px 0;
+                span{
+                    margin: 20px 0;
+                }
+                a{
+                    margin: 5px 0;
+                    &:hover{
+                        color: #DCB14A;
+                    }
+                }
+                
             }
             .follow{
                 margin: 0 auto;
                 color: #838181;
                 .fab{
+                    width: 20px;
+                    border-radius: 50px;
+                    border: 1px solid #838181 ;
                     padding: 10px;
                     color: #838181;
+                    margin-top: 20px;
                     margin-left: 10px;
                     &:hover{
-                        color: #DCB14A;
+                        transition: .2s;
+                        border-color: #DCB14A;
+                        color:#fff;
+                        background-color: #DCB14A;
                     }
                 }
             }
         }
     }
     a{
-        color: #c1c1c1;
-        
+        color: #c1c1c1;   
+    }
+    
+}
+@media (max-width:575px) {
+    .Menu_sec {
+        .menu-body{
+            padding: 0 !important;
+        }
+        .container{
+            width: 80% !important;
+        }
     }
     
 }
