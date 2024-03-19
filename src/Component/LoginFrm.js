@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import PageName from './PageName';
 import './Style/LoginPage.scss'
 
 export default function LoginFrm() {
   return (
+    <>
+    <PageName pageName='Login'/>
     <div className='Login_frm'>
         <div className='frm_body'>
             <div className='frm_cont'> 
@@ -19,9 +22,11 @@ export default function LoginFrm() {
                         <li><a href='/resetPassword'> Lost your password ? </a></li>
                     </ul>
                     <button type='submit' className='login_btn'> Login </button>
+                    <a className='registerLink' href='/register'> Sign Up / New Register </a>
                 </form>
             </div>
         </div>
     </div>
+    </>
   )
 }

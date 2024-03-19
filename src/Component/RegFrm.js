@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import PageName from './PageName';
+
 
 export default function RegFrm() {
   return (
-    
+    <>
+    <PageName pageName='Create Account'/>
     <div className='Login_frm'>
         <div className='frm_body'>
             <div className='frm_cont'> 
@@ -24,10 +27,11 @@ export default function RegFrm() {
                         </p>
                     </ul>
                     <button type='submit' className='login_btn'> Register </button>
+                    <a className='registerLink' href='./'> Log in </a>
                 </form>
             </div>
         </div>
     </div>
-    
+    </>
   )
 }

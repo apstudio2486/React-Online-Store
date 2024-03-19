@@ -15,7 +15,7 @@ function App() {
       <Header id="header"/>
       <Routes>
           <Route exact path='/' element={<Main/>}/>  
-          <Route path='/user/*' element={<UserSetup/>}/>
+          <Route path='/profile*' element={<UserSetup/>}/>
           <Route path='/bookmark' element={<Bookmark/>}/>  
           <Route path='/cart' element={<ViewCart/>}/>  
           <Route path='*' element={<Error 

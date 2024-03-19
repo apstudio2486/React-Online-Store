@@ -5,7 +5,6 @@ import './Style/Menu.scss'
 
 
 function Header() { 
-    
     function openMenu() {
         const Menuclose = document.getElementById('menuClick');
         Menuclose.style.width = '100%';   
@@ -15,16 +14,16 @@ function Header() {
         const Menuclose = document.getElementById('menuClick');
         Menuclose.style.width = '0';    
     }
-
+    
   return (
    <>
-    <div className='Header'>
+    <div className='Header' id='sticky'>
         <div className='head-body container'>
             <div className='menu'>
                 <span> <input className='search-box' type='text' placeholder='Search' /> <i className='fas fa-search'/> </span>
-                <h2 className='title'> Online Store </h2>
+                <h2 className='title'> <Link href='/'> Online Store</Link> </h2>
                 <ul className='menu-opt'>
-                    <li><Link to='/user'><i className='far fa-user'/> </Link></li>
+                    <li><Link to='/profile'><i className='far fa-user'/> </Link></li>
                     <li><Link to='/bookmark'><i className='far fa-bookmark'/></Link></li>
                     <li><Link to='/cart'><i className='fas fa-shopping-cart'/></Link></li>
                     <li><Link onClick={openMenu}><i className='fas fa-bars'/></Link></li> 
@@ -32,7 +31,6 @@ function Header() {
             </div>
         </div>
     </div>
-
     {/* ========================== Menu Section Start =========================== */}
     
     <div className='Menu_sec' id='menuClick'>

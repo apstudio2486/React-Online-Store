@@ -31,6 +31,9 @@
         .side-1{
             width: 50%;
             @media (max-width:991px) {
+                width: 50%;
+            }
+            @media (max-width:575px) {
                 width: 100%;
             }
             span{

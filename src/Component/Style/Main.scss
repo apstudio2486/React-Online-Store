@@ -1,0 +1,11 @@
+.registerLink{
+    margin: 10px 0;
+    text-align: right;
+    display: block;
+    color: #aaa;
+    transition: 0.2s;
+    &:hover{
+        color: #DCB14A;
+        transition: 0.2s;
+    }
+}

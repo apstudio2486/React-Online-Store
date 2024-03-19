@@ -3,7 +3,17 @@
     justify-content: space-around;
 }
 
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+    transition: cubic-bezier(.3,.73,.3,.74);
+    width: 100%; 
+}
 .Header{
+    background-color: #fff;
     // box-shadow: 0 0 2px 3px #ddd;
     padding: 10px 0;
     .head-body{
@@ -31,8 +41,10 @@
                 margin-left:10px; 
             }
             .title{
-                padding: 15px 0;
-                color: #DCB14A
+                a{
+                    padding: 15px 0;
+                    color: #DCB14A;
+                }
             }
             .menu-opt{
                 @include flex;
